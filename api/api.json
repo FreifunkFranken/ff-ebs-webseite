@@ -1,30 +1,68 @@
 {
-  "name": "Freifunk Flensburg",
-  "url": "http://Freifunk-Flensburg.de",
-  "location": {
-    "city": "Flensburg",
-    "country": "Germany",
-    "lat": 54.788101,
-    "lon": 9.4320812
-  },
-  "contact": {
-    "email": "presse@Freifunk-Flensburg.de",
-    "facebook": "https://facebook.com/FreifunkFlensburg",
-    "twitter": "@FreiFunkFlens"
-  },
-  "state": {
-    "message": "Ein Projekt des nordlab e.V.",
-    "lastchange": "2014-06-25T15:47:05.707Z"
-  },
-  "nodeMaps": [
-    {
-      "url": "http://map.Freifunk-Flensburg.de",
-      "technicalType": "ffmap",
-      "mapType": "structural"
-    }
-  ],
-  "techDetails": {
-    "routing": ""
-  },
-  "api": "0.3.0"
+    "name": "Freifunk Forchheim",
+    "metacommunity": "Freifunk Franken",
+    "location": {
+        "city": "Ebermannstadt",
+        "lat": 49.779167,
+        "lon": 11.184722
+    },
+    "nodeMaps": [
+        {
+            "url": "https://netmon.freifunk-franken.de/map.php?zoom=13&lat=49.77509&lon=11.18624&layers=B0000TTTTTT",
+            "technicalType": "netmon",
+            "mapType": "geographical"
+        },
+        {
+            "url": "https://netmon.freifunk-franken.de/routerlist.php",
+            "technicalType": "netmon",
+            "mapType": "list/status"
+        }
+    ],
+    "url": "http://freifunk-franken.de",
+    "state": {
+        "focus": [
+            "infrastructure/backbone",
+            "Public Free Wifi",
+            "Free internet access"
+        ],
+        "nodes": 11,
+        "lastchange": 1423232076
+    },
+    "contact": {
+        "email": "fragen@freifunk-franken.de",
+        "facebook": "https://www.facebook.com/FreifunkFranken",
+        "ml": "http://lists.freifunk.net/mailman/listinfo/franken-freifunk.net",
+        "phone": "+49 9101 7018607",
+        "irc": "irc://irc.freenode.net/#freifunkfranken",
+        "twitter": "@FreifunkFranken"
+    },
+    "support": {
+        "donations": {
+            "campaigns": [
+                {
+                    "provider": "betterplace",
+                    "projectid": "14713"
+                }
+            ]
+        }
+    },
+    "techDetails": {
+        "firmware": {
+            "name": "Freifunk-Franken Firmware",
+            "url": "https://dev.freifunk-franken.de/firmware/",
+            "docs": "https://wiki.freifunk-franken.de/w/Portal:Firmware"
+        },
+        "routing": [
+            "batman-adv",
+            "OLSR"
+        ],
+        "updatemode": [
+            "manual"
+        ],
+        "legals": [
+            "vpnnational",
+            "vpninternational"
+        ]
+    },
+    "api": "0.4.6"
 }
