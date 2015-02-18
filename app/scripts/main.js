@@ -40,7 +40,7 @@ $(document).ready(function() {
 /*
     get json data for map
 */
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $.ajax({
       url: 'bower_components/leaflet/dist/leaflet.js',
@@ -95,7 +95,7 @@ $(document).ready(function() {
       }
     });
 
-});
+});*/
 
 /*
     choose customer
