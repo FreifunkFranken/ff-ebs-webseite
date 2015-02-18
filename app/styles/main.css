@@ -1,4 +1,4 @@
-/*  freifunk flensburg website stylesheets */  
+/*  freifunk flensburg website stylesheets */
 
 /*  reset css;
     ========================================================================== */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -53,8 +53,8 @@ table {
 }
 
 a:focus,
-button:focus { 
-    outline: none; 
+button:focus {
+    outline: none;
 }
 
 button::-moz-focus-inner {
@@ -67,7 +67,7 @@ button::-moz-focus-inner {
 *,
 *:before,
 *:after {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -mz-box-sizing: border-box;
 }
@@ -81,7 +81,7 @@ html {
     color: #000000; /* black */
     font-family: 'Source Sans Pro', sans-serif;
 }
-    
+
 body {
     line-height: 1.4;
 }
@@ -91,7 +91,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;   
+    font-weight: 700;
 }
 
 h3 {
@@ -107,7 +107,7 @@ a {
 }
 
 address {
-    font-style: normal; 
+    font-style: normal;
 }
 
 strong {
@@ -451,7 +451,7 @@ html.sticky .logo a {
         float: none;
         text-align: center;
     }
-    
+
 }
 
 /*  map section
@@ -502,8 +502,8 @@ html.sticky .logo a {
     content: '';
     display: block;
     margin-left: 2em;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 1em solid transparent;
     border-right: 1em solid transparent;
     border-top: 1em solid #dc0067; /* freifunk magenta */
@@ -575,8 +575,8 @@ html.sticky .logo a {
     top: 50%;
     right: 0.5em;
     margin-top: -0.15em;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 0.3em solid transparent;
     border-right: 0.3em solid transparent;
     border-top: 0.3em solid #d3d3d3; /* freifunk magenta */

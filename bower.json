@@ -1,0 +1,8 @@
+{
+  "name": "ff-ebs-webseite",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "leaflet": "~0.7.3"
+  }
+}

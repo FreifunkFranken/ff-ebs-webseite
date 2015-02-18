@@ -1,2 +1,4 @@
-
-psd/media/mitmachenkreise.psd
+node_modules
+dist
+.tmp
+bower_components

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head name="start">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Freifunk Ebermannstadt</title>
+        <meta name="description" content="Freifunk Ebermannstadt ist dein freies WLAN zum selber machen, in Ebermannstadt und Umgebung.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" sizes="192x192" href="highres-favicon.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="manifest" href="manifest.json">
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body id="start">
+        <!--[if lt IE 9]>
+            <aside class="browse-happy">Du benutzt einen <strong>veralteten</strong> Webbrowser. Einige Funktionen dieser Webseite werden leider nicht funktionieren. Du kannst einen neuen <a target="_blank" href="http://browsehappy.com/">sicheren Webbrowser herunterladen</a>, um dein Erlebnis auf unserer und anderen Internetseiten zu verbessern.</p></aside>
+        <![endif]-->
+
+        <div class="main-header-wrap">
+            <header id="main-header">
+                <h1 class="logo">
+                    <a href="#start">Freifunk Flensburg</a>
+                </h1>
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#find-us">Karte</a></li>
+                        <li><a href="#participate">Mitmachen</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a target="_blank" href="http://wiki.freifunk-flensburg.de/wiki/Hauptseite">Wiki</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <section>
+                <figure class="start_simulate-wlan" id="start_simulate-wlan">
+                    <figcaption>
+                        <h2>Freies WLAN für Flensburg</h2>
+                    </figcaption>
+                </figure>
+
+            </section>
+            <section class="section-standard">
+                <div class="about_main">
+                    <figure>
+                        <img src="media/freifunk-flensburg-router.png" alt="Freifunk Flensburg Router" title="Freifunk Flensburg Router">
+                    </figure>
+                    <h3>Was ist Freifunk Flensburg?</h3>
+                    <p>Freifunk Flensburg ist dein freies WLAN zum selber machen in Flensburg und Umgebung.</p>
+                    <p>Wir möchten möglichst vielen Menschen überall und jederzeit einen guten Zugang zum Internet bieten. Dafür arbeiten wir an einem Gemeinschaftsnetz, welches jede*r vergrößern und verbessern kann.</p>
+                    <p>Über Freifunk surfen ist nicht nur kostenlos, sondern auch unbegrenzt, kennwortlos und super einfach.</p>
+                </div>
+
+            </section>
+            <figure class="section-image">
+                <img name="find-us" id="find-us" src="images/freifunk-flensburg-smartphone-by-fabian-horst.jpg" alt="Freifunk Flensburg - auch in deiner Nähe">
+                <figcaption>
+                    <h2>Auch in deiner Nähe</h2>
+                </figcaption>
+            </figure>
+            <section class="section-standard">
+                <div id="map" class="find-us_map"></div>
+                <noscript>Hier zeigen wir normalerweise unsere aktuellen Standorte unserer Knoten auf einer Karte an. Du benötigst JavaScript für diese Funktion.</noscript>
+                <h3>Ein schneller Überblick</h3>
+                <p>Wir sind dabei unser Netz immer weiter auszubauen. Derzeit gibt es in Flensburg bereits <span id="count-nodes">an die 50</span> Knoten.</p>
+                <h3>Du willst mehr Standorte auf dieser Karte sehen?</h3>
+                <p>Du kannst deinen <a href="#participate">eigenen Knoten erstellen</a> und dabei helfen, Flensburg mit Freifunk zu versorgen.</p>
+
+            </section>
+            <figure name="participate" id="participate" class="section-image">
+                <img src="images/freifunk-flensburg-routerhafenspitze-by-fabian-horst.jpg" alt="Freifunk Flensburg - Router an der Hafenspitze">
+                <figcaption>
+                    <h2>Mach mit, bewege Bytes</h2>
+                </figcaption>
+            </figure>
+            <section class="section-standard">
+                <ul id="choose-customer" class="participate_list-choose-customer">
+                    <li data-show-customer="rookie" class="active">
+                        <header>
+                            <h3>Anfänger</h3>
+                            <p>Du hast gerade erst von uns gehört, findest die Idee interessant und möchtest mitmachen?</p>
+                        </header>
+                    </li>
+                    <li data-show-customer="member" class="member">
+                        <header>
+                            <h3>Freifunker</h3>
+                            <p>Du bist schon länger dabei und bist auf der Suche nach passenden Informationen?</p>
+                        </header>
+                    </li>
+                    <li data-show-customer="sponsor" class="sponsor">
+                        <header>
+                            <h3>Unterstützer</h3>
+                            <p>Du findest das Projekt unterstützenswert und kannst finanziell etwas beitragen?</p>
+                        </header>
+                    </li>
+                </ul>
+                <section id="show-customer">
+                    <article id="rookie" class="participate_show-customer active">
+                        <h4>Du bist hier genau richtig</h4>
+                        <p>Ein freies WLAN in Flensburg aufzubauen macht enorm Spaß, bedarf aber auch viel Arbeit. Wir brauchen viele Flensburger. Es wäre also toll, wenn du mitmachen möchtest.</p>
+                        <h4>Der erste Schritt, dein eigener Knoten</h4>
+                        <p>Am einfachsten kannst du bei Freifunk Flensburg mitmachen, indem du selber einen Knoten aufstellst. Ein Knoten ist ein technisches Gerät (ein Router), auf dem unsere Freifunk-Software läuft. Den Knoten kannst du dir bei uns für ca. 20 Euro, komplett fertig eingerichtet, kaufen. Deinen Knoten brauchst du dann nur noch an den Strom und an das Internet anzuschließen und schon können du und andere über Freifunk surfen. So einfach ist das.</p>
+                        <h4>Mach mehr und bringe dich ein</h4>
+                        <p>Wir treffen uns jeden Montag mit einer Gruppen von Technikinteressierten und besprechen den weiteren Verlauf von Freifunk Flensburg. Komm doch einfach mal vorbei. Wir treffen uns im Offenen Kanal Flensburg, St.-Jürgen-Straße 95, immer Montags ab 18:00 Uhr.</p>
+                        <h4>War etwas unverständlich?</h4>
+                        <p>Dann kontaktiere uns. Wo du uns genau findest, ob online oder offline, findest du <a href="#contact">unter Kontakt</a>.</p>
+
+                    </article>
+                    <article id="member" class="participate_show-customer active">
+                        <form class="participate_download-form" id="download-form">
+                            <h3>Firmware (<?php echo $versionNumber; ?>)</h3>
+                            <label>Wähle eine Aktion aus</label>
+                            <div class="select-field">
+                                <select id="download-form-type">
+                                    <option value="0">Freifunk Firmware neuinstallieren</option>
+                                    <option value="1">Freifunk Firmware updaten</option>
+                                </select>
+                            </div>
+                            <label>Wähle einen Router aus</label>
+                            <div class="select-field">
+                                <select id="download-form-router">
+                                    <option value="-1">Bitte wähle einen Router aus</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-d-link-dir-615-rev-e1">D-Link 615</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-d-link-dir-825-rev-b1">D-Link 825</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-linksys-wrt160nl">Linksys WRT 160 NL</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-mr3020-v1">TP-Link TL MR 3020 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-mr3040-v1">TP-Link TL MR 3040 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-mr3220-v1">TP-Link TL MR 3220 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-mr3420-v1">TP-Link TL MR 3420 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-mr3420-v2">TP-Link TL MR 3420 Ver:2</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wa901n-nd-v2">TP-Link TL WA 901 N/ND Ver:2</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wdr3500-v1">TP-Link TL WDR 3500 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wdr3600-v1">TP-Link TL WDR 3600 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wdr4300-v1">TP-Link TL WDR 4300 Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr740n-nd-v1">TP-Link TL WR 740 N/ND Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr740n-nd-v3">TP-Link TL WR 740 N/ND Ver:3</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr740n-nd-v4">TP-Link TL WR 740 N/ND Ver:4</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr741n-nd-v1">TP-Link TL WR 741 N/ND Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr741n-nd-v2">TP-Link TL WR 741 N/ND Ver:2</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr741n-nd-v4">TP-Link TL WR 741 N/ND Ver:4</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr841n-nd-v3">TP-Link TL WR 841 N/ND Ver:3</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr841n-nd-v5">TP-Link TL WR 841 N/ND Ver:5</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr841n-nd-v7">TP-Link TL WR 841 N/ND Ver:7</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr841n-nd-v8">TP-Link TL WR 841 N/ND Ver:8</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr841n-nd-v9">TP-Link TL WR 841 N/ND Ver:9</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr842n-nd-v1">TP-Link TL WR 842 N/ND Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr842n-nd-v2">TP-Link TL WR 842 N/ND Ver:2</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr941n-nd-v2">TP-Link TL WR 941 N/ND Ver:2</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr941n-nd-v3">TP-Link TL WR 941 N/ND Ver:3</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr941n-nd-v4">TP-Link TL WR 941 N/ND Ver:4</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-tp-link-tl-wr1043n-nd-v1">TP-Link TL WR 1043 N/ND Ver:1</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-ubiquiti-bullet-m">Ubiquiti Bullet M</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-ubiquiti-nanostation-m">Ubiquiti Nanostation M</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-ubiquiti-unifi">Ubiquiti UniFi</option>
+                                    <option value="gluon-fffl-<?php echo $versionNumber; ?>-ubiquiti-unifiap-outdoor">Ubiquiti UniFi AP-Outdoor</option>
+                                </select>
+                            </div>
+                            <button class="button">Herunterladen</button>
+                            <p>Eine Anleitung wie du die Freifunk Flensburg Firmware auf deinem Router selber installieren kannst findest du bei uns <a href="http://wiki.freifunk-flensburg.de/wiki/Einen_Knoten_einrichten">hier im Wiki</a>. Die Freifunk Flensburg Firmware steht unter der <a href="http://de.wikipedia.org/wiki/GNU_General_Public_License" target="_blank">GPL Lizenz</a>. Du darfst sie somit kostenlos nutzen, studieren, ändern und verbreiten.</p>
+                        </form>
+                        <aside class="participate_list-links">
+                            <h2>Freifunk Flensburg Links</h2>
+                            <ul>
+                                <li><a target="_blank" href="http://wiki.freifunk-flensburg.de/wiki/Hauptseite">Unser Wiki</a></li>
+                                <li><a target="_blank" href="https://github.com/freifunk-flensburg">Github</a></li>
+                                <li><a target="_blank" href="http://map.freifunk-flensburg.de">Unsere Mesh-Map</a></li>
+                                <li><a target="_blank" href="http://nordlab-ev.de">nordlab e.V.</a></li>
+                            </ul>
+                            <h2>Allgemeine Freifunk Links</h2>
+                            <ul>
+                                <li><a target="_blank" href="http://freifunk.net/">freifunk.net</a></li>
+                                <li><a target="_blank" href="http://wiki.freifunk.net/">Wiki</a></li>
+                            </ul>
+                        </aside>
+
+                    </article>
+                    <article id="sponsor" class="participate_show-customer active">
+                        <h4>Wir suchen Räumlichkeiten</h4>
+                        <p>Du vermietest Räumlichkeiten oder kennst jemand, der dies tut?<br>
+                        Momentan suchen wir günstige Räumlichkeiten für unsere regelmäßigen Treffen. Im besten Fall sollten sie zentral
+                        gelegen sein und nicht von anderen Genutzt werden, da wir einen Teil unserer Ausrüstung dort Lagern wollen. <br>
+                        Bitte kontaktiere uns, wenn du eine passende Location hast.<br></p>
+
+                        <h4>Spenden sind willkommen</h4>
+                        <p>Wir freuen uns jederzeit, wenn du das Projekt finanziell unterstützen möchtest. Dabei ist es egal wie groß oder klein dein
+                        Beitrag ist: Jede Spende ist hilfreich! Natürlich stellen wir dir auf Wunsch auch eine Spendenquittung aus.</p>
+
+                        <h4>Hohe Gebäude gesucht</h4>
+                        <p>Um unser Freifunknetz in Flensburg weiter auszubauen wollen wir hoch hinaus. Hierzu suchen wir hohe Gebäude mit guter
+                        Aussicht, von denen wir WLAN-Verbindungen zu anderen Routern und Gebäuden herstellen können, um auch Router ohne
+                        Internet-Anschluss ins Freifunknetz einzubinden.<br>
+                        Du bist Eigentümer eines solchen Gebäudes oder kennst den Eigentümer und du/er möchte es uns zur Verfügung stellen?<br>
+                        Dann kommt zu einem unserer Treffen oder Kontaktiert uns und wir besprechen die hierzu nötige Schritte und zeigen dir/euch
+                        wie ein solcher Standort aussehen könnte.
+
+                    </article>
+                </section>
+
+            </section>
+            <figure name="faq" id="faq" class="section-image">
+                <img src="images/freifunk-flensburg-fragen-by-fabian-horst.jpg" alt="Freifunk Flensburg - Mit den richtigen Antworten">
+                <figcaption>
+                    <h2>Wir haben Antworten</h2>
+                </figcaption>
+            </figure>
+            <section class="section-standard">
+                <section class="faq_odd">
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Darf ich Freifunk einfach so benutzen?</p>
+                		<h4>Antwort</h4>
+                		<p>Natürlich darfst du das, denn es ist ein Bürgernetz, dass allen gehört und an dem alle mitwirken. Daher würden wir uns freuen wenn auch du einen Knoten aufstellst.</p>
+                	</article>
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Wie kann ich Freifunk nutzen?</p>
+                		<h4>Antwort</h4>
+                		<p>Sobald du im Empfangsbereich einer der Knoten bist kannst du Freifunk mit jedem WLAN-fähigem Gerät nutzen. Sei es Smartphone, Tablett oder PC. Sobald du ein WLAN angezeigt bekommst, welches den Namen flensburg.freifunk.net hat, kannst du dich dort ohne Passwort einloggen. Wo der nächste Knoten steht, siehst du auf unserer Karte.</p>
+                	</article>
+
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Was ist wenn jemand etwas illegales über meinen Knoten herrunterlädt?</p>
+                		<h4>Antwort</h4>
+                		<p>Du musst dir keine Sorgen machen, dass du Post von einem Anwalt bekommst. Wir sorgen mit technischen Mitteln dafür, das alles was über die Freifunk Knoten passiert nicht direkt, sondern über uns ins Internet geht. Der Freifunkverkehr wird verschlüsselt und über unsere Server ins Netz geleitet. So musst du dir keine Sorge um die Störerhaftung machen, falls jemand über deinen Knoten Illegales herrunterlädt.</p>
+                	</article>
+                </section>
+
+                <section class="faq_even">
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Was kostet Freifunk?</p>
+                		<h4>Antwort</h4>
+                		<p>Wenn du mit Freifunk surfen willst kostet es dich nichts. Wenn Du selbst einen Freifunk-Zugang betreiben willst, entstehen lediglich Kosten für die Anschaffung eines Knoten, welche ab 18 Euro beginnen. Hinzuzüglich kommen Stromkosten, die sich jährlich auf etwa 5 Euro belaufen. Wenn Du zusätzlich auch noch deinen Internetanschluss teilen möchtest kommen natürlich auch noch die Kosten für diesen hinzu.</p>
+                	</article>
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Ich habe keine Ahnung von Technik. Kann ich trotzdem einen Knoten betreiben?</p>
+                		<h4>Antwort</h4>
+                		<p>Ja das kannst du. Entweder kannst du dir selber einen Knoten kaufen oder wir kaufen einen für Dich und helfen dir gern bei der Einrichtung oder richten diesen fertig ein, so dass Du deinen Knoten nur noch in die Steckdose stecken musst und gegebenenfalls mit deinem Router verbinden musst.</p>
+                	</article>
+
+                	<article class="faq_content">
+                		<h4>Frage</h4>
+                		<p>Wie verbinden sich eure Router und woher kommt dieses neue WLAN mit komischen Namen?</p>
+                		<h4>Antwort</h4>
+                		<p>Unsere Knoten verbinden sich über ihr WLAN kabellos zu einem Mesh-Netzwerk, das heisst sie sprechen miteinander. So können zwei Knoten Daten austauschen, ihren Internetanschluss teilen und so das Freifunknetz erweitern. Dafür baut jeder Router auch ein Netzwerk mit dem Namen 22:22:54:78:09:43 auf. Dieses kannst du getrost ignorieren.</p>
+                	</article>
+                </section>
+
+            </section>
+            <figure name="contact" id="contact" class="section-image">
+                <img src="images/freifunk-flensburg-kontakte.jpg" alt="Basteln beim Freifunk Flensburg">
+                <figcaption>
+                    <h2>Jede Menge Kontakt(e)</h2>
+                </figcaption>
+            </figure>
+            <section class="section-standard">
+                <div class="contact_left">
+                	<h3>Offline</h3>
+                	<p>Freifunk Flensburg ist ein Projekt des nordlab e.V. und des Chaostreff Flensburg. Interessierte sind gerne eingeladen bei unseren Treffen am Montag beim Offenen Kanal, St.-Jürgen-Straße 95, ab 18:00 Uhr vorbei zu schauen. Auch bei den OpenChaos Treffen im Chaostreff Flensburg, Toosbüystraße 13, könnt ihr euch über Freifunk informieren. Die nächsten Termine zum OpenChaos und zu Treffen zum Freifunk Flensburg findest du auf <a href="http://chaostreff-flensburg.de/">Chaostreff-Flensburg.de</a>.</p>
+                	<address>
+                		Telefon: <a href="tel:046157494595">0461 57494595</a>  <br>
+                		Freifunk Flensburg <br>
+                		c/o nordlab e.V. <br>
+                		Rude 27 <br>
+                		24941 Flensburg
+                	</address>
+                	<address>
+                		Chaostreff Flensburg <br>
+                		Toosbüystraße 13 <br>
+                		24939 Flensburg
+                	</address>
+                </div>
+                <div class="contact_right">
+                	<h3>Online</h3>
+                	<address>
+                		E-Mail-Adresse: <a target="_blank" href="mailto:presse@freifunk-flensburg.de">presse@freifunk-flensburg.de</a><br>
+                		Facebook: <a target="_blank" href="https://www.facebook.com/FreifunkFlensburg">facebook.com/FreifunkFlensburg</a><br>
+                		Twitter: <a target="_blank" href="https://twitter.com/FreiFunkFlens">@FreiFunkFlens</a><br>
+                		IRC: <a target="_blank" href="http://wiki.freifunk-flensburg.de/wiki/IRC">#freifunk-flensburg</a>
+                	</address>
+                	<p>Besuche uns im <a href="https://kiwiirc.com/client/irc.lugfl.de:+6668/?nick=Website-Guest|?#freifunk-flensburg" target="_blank">Webchat</a>.</p>
+                </div>
+
+            </section>
+        </main>
+        <footer class="main-footer">
+            <ul class="list-external-links">
+                <li>
+                    <a href="https://www.facebook.com/FreifunkFlensburg" title="Erfahre mer über uns bei Facebook" class="facebook" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/FreiFunkFlens" title="Erfahre mer über uns bei Twitter" class="twitter" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a href="http://nordlab-ev.de" class="nordlab" title="Wir gehören zum nordlab e.V." target="_blank">nordlab e.V.</a>
+                </li>
+                <li>
+                  <a href="http://chaostreff-flensburg.de/" class="nordlab" title="Wir gehören zum Chaostreff Flensburg." target="_blank">Chaostreff Flensburg</a>
+                </li>
+                <li>
+                    <a href="http://freifunk.net/" class="freifunk" title="Freifunk Allgemein" target="_blank">freifunk.net</a>
+                </li>
+                <li>
+                    <a href="https://github.com/freifunk-flensburg" class="github" title="Unser Code">GitHub</a>
+                </li>
+            </ul>
+        </footer>
+          <!-- build:js(.) scripts/vendor.js -->
+          <!-- bower:js -->
+          <script src="bower_components/jquery/dist/jquery.js"></script>
+          <script src="bower_components/leaflet/dist/leaflet.js"></script>
+          <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+          <!-- endbower -->
+          <!-- endbuild -->
+          <!-- build:js({app,.tmp}) scripts/main.js -->
+          <script src="scripts/main.js"></script>
+          <script src="scripts/jquery.particleground.js"></script>
+          <!-- endbuild -->
+    </body>
+</html>
