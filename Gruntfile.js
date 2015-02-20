@@ -293,12 +293,14 @@ module.exports = function(grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             //'{,*/}*.html',
-            'index.html',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.dist %>/.htaccess'
+        }, {
+          src: '.tmp/index.html',
+          dest: '<%= config.dist %>/index.html'
         }]
       },
       styles: {
@@ -327,7 +329,7 @@ module.exports = function(grunt) {
     bake: {
       build: {
         files: {
-          "<%= config.app %>/index.html": "<%= config.app %>/base.html"
+          ".tmp/index.html": "<%= config.app %>/index.html"
         }
       },
     }

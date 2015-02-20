@@ -43,24 +43,10 @@
         </div>
         <main>
             <section>
-                <figure class="start_simulate-wlan" id="start_simulate-wlan">
-                    <figcaption>
-                        <h2>Freies WLAN für Ebermannstadt</h2>
-                    </figcaption>
-                </figure>
-
+                <!--(bake content/start.html)-->
             </section>
             <section class="section-standard">
-                <div class="about_main">
-                    <figure>
-                        <img src="images/freifunk-flensburg-router.png" alt="Freifunk Flensburg Router" title="Freifunk Flensburg Router">
-                    </figure>
-                    <h3>Was ist Freifunk Ebermannstadt?</h3>
-                    <p>Freifunk Ebermannstadt ist dein freies WLAN zum selber machen in Ebermannstadt und Umgebung.</p>
-                    <p>Wir möchten möglichst vielen Menschen überall und jederzeit einen guten Zugang zum Internet bieten. Dafür arbeiten wir an einem Gemeinschaftsnetz, welches jede*r vergrößern und verbessern kann.</p>
-                    <p>Über Freifunk surfen ist nicht nur kostenlos, sondern auch unbegrenzt, kennwortlos und super einfach.</p>
-                </div>
-
+                <!--(bake content/about.html)-->
             </section>
             <figure class="section-image">
                 <img name="find-us" id="find-us" src="images/freifunk-flensburg-smartphone-by-fabian-horst.jpg" alt="Freifunk Flensburg - auch in deiner Nähe">
@@ -69,14 +55,7 @@
                 </figcaption>
             </figure>
             <section class="section-standard">
-                <iframe src="https://netmon.freifunk-franken.de/map.php?embed=1&zoom=15&lat=49.78116&lon=11.18645&layers=B0000TTTTTT" width="100%" height="650px" name="SELFHTML_in_a_box">
-                  <p>Die Karte kann leider nciht angezeigt werden, weil das dein Brwoser nicht unterstützt :(</p>
-                </iframe>
-                <h3>Ein schneller Überblick</h3>
-                <p>Wir sind dabei unser Netz immer weiter auszubauen.</p>
-                <h3>Du willst mehr Standorte auf dieser Karte sehen?</h3>
-                <p><a href="https://wiki.freifunk-franken.de/w/Mitmachen">Mach einfach mit</a> und helf dabein, Ebermannstadt mit Freifunk zu versorgen.</p>
-
+                <!--(bake content/find-us.html)-->
             </section>
             <figure name="participate" id="participate" class="section-image">
                 <img src="images/freifunk-flensburg-routerhafenspitze-by-fabian-horst.jpg" alt="Freifunk Flensburg - Router an der Hafenspitze">
@@ -85,68 +64,7 @@
                 </figcaption>
             </figure>
             <section class="section-standard">
-                <ul id="choose-customer" class="participate_list-choose-customer">
-                    <li data-show-customer="rookie" class="active">
-                        <header>
-                            <h3>Anfänger</h3>
-                            <p>Du hast gerade erst von uns gehört, findest die Idee interessant und möchtest mitmachen?</p>
-                        </header>
-                    </li>
-                    <li data-show-customer="member" class="member">
-                        <header>
-                            <h3>Freifunker</h3>
-                            <p>Du bist schon länger dabei und bist auf der Suche nach passenden Informationen?</p>
-                        </header>
-                    </li>
-                    <li data-show-customer="sponsor" class="sponsor">
-                        <header>
-                            <h3>Unterstützer</h3>
-                            <p>Du findest das Projekt unterstützenswert und kannst finanziell etwas beitragen?</p>
-                        </header>
-                    </li>
-                </ul>
-                <section id="show-customer">
-                    <article id="rookie" class="participate_show-customer active">
-                        <h4>Du bist hier genau richtig</h4>
-                        <p>Ein freies WLAN in Ebermannstadt aufzubauen macht enorm Spaß, bedarf aber auch viel Arbeit. Wir brauchen viele Ebermannstadter. Es wäre also toll, wenn du mitmachen möchtest.</p>
-                        <h4>Der erste Schritt, dein eigener Knoten</h4>
-                        <p>Am einfachsten kannst du bei Freifunk Ebermannstadt mitmachen, indem du selber einen Knoten aufstellst. Ein Knoten ist ein technisches Gerät (ein Router), auf dem unsere Freifunk-Software läuft. Den Knoten kannst du dir bei uns für ca. 50 Euro, komplett fertig eingerichtet, kaufen. Deinen Knoten brauchst du dann nur noch an den Strom und an das Internet anzuschließen und schon können du und andere über Freifunk surfen. So einfach ist das.</p>
-                        <h4>War etwas unverständlich?</h4>
-                        <p>Dann kontaktiere uns. Wo du uns genau findest, ob online oder offline, findest du <a href="#contact">unter Kontakt</a>.</p>
-
-                    </article>
-                    <article id="member" class="participate_show-customer active">
-                        <div class="participate_download-form" id="download-form">
-                            <h3>Flashen</h3>
-                            <p>Eine Anleitung wie du die Freifunk Franken Firmware auf deinem Router selber installieren kannst findest du bei uns <a href="https://wiki.freifunk-franken.de/w/Anleitungen">hier im Wiki</a>.</p>
-                        </div>
-                        <aside class="participate_list-links">
-                            <h2>Freifunk Flensburg Links</h2>
-                            <ul>
-                                <li><a target="_blank" href="https://wiki.freifunk-franken.de/w/Hauptseite">Unser Wiki</a></li>
-                                <li><a target="_blank" href="https://github.com/FreifunkFranken">Github</a></li>
-                                <li><a target="_blank" href="https://netmon.freifunk-franken.de/map.php">Unser Netmon</a></li>
-                            </ul>
-                            <h2>Allgemeine Freifunk Links</h2>
-                            <ul>
-                                <li><a target="_blank" href="http://freifunk.net/">freifunk.net</a></li>
-                                <li><a target="_blank" href="http://wiki.freifunk.net/">Wiki</a></li>
-                            </ul>
-                        </aside>
-
-                    </article>
-                    <article id="sponsor" class="participate_show-customer active">
-                        <h4>Hohe Gebäude gesucht</h4>
-                        <p>Um unser Freifunknetz in Ebermannstadt weiter auszubauen wollen wir hoch hinaus. Hierzu suchen wir hohe Gebäude mit guter
-                        Aussicht, von denen wir WLAN-Verbindungen zu anderen Routern und Gebäuden herstellen können, um auch Router ohne
-                        Internet-Anschluss ins Freifunknetz einzubinden.<br>
-                        Du bist Eigentümer eines solchen Gebäudes oder kennst den Eigentümer und du/er möchte es uns zur Verfügung stellen?<br>
-                        Dann Kontaktiert uns und wir besprechen die hierzu nötige Schritte und zeigen dir/euch
-                        wie ein solcher Standort aussehen könnte.
-
-                    </article>
-                </section>
-
+                <!--(bake content/participate.html)-->
             </section>
             <figure name="faq" id="faq" class="section-image">
                 <img src="images/freifunk-flensburg-fragen-by-fabian-horst.jpg" alt="Freifunk Flensburg - Mit den richtigen Antworten">
@@ -155,50 +73,7 @@
                 </figcaption>
             </figure>
             <section class="section-standard">
-                <section class="faq_odd">
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Darf ich Freifunk einfach so benutzen?</p>
-                		<h4>Antwort</h4>
-                		<p>Natürlich darfst du das, denn es ist ein Bürgernetz, dass allen gehört und an dem alle mitwirken. Daher würden wir uns freuen wenn auch du einen Knoten aufstellst.</p>
-                	</article>
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Wie kann ich Freifunk nutzen?</p>
-                		<h4>Antwort</h4>
-                		<p>Sobald du im Empfangsbereich einer der Knoten bist kannst du Freifunk mit jedem WLAN-fähigem Gerät nutzen. Sei es Smartphone, Tablett oder PC. Sobald du ein WLAN angezeigt bekommst, welches den Namen franken.freifunk.net hat, kannst du dich dort ohne Passwort einloggen. Wo der nächste Knoten steht, siehst du auf unserer Karte.</p>
-                	</article>
-
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Was ist wenn jemand etwas illegales über meinen Knoten herrunterlädt?</p>
-                		<h4>Antwort</h4>
-                		<p>Du musst dir keine Sorgen machen, dass du Post von einem Anwalt bekommst. Wir sorgen mit technischen Mitteln dafür, das alles was über die Freifunk Knoten passiert nicht direkt, sondern über uns ins Internet geht. Der Freifunkverkehr wird verschlüsselt und über unsere Server ins Netz geleitet. So musst du dir keine Sorge um die Störerhaftung machen, falls jemand über deinen Knoten Illegales herrunterlädt.</p>
-                	</article>
-                </section>
-
-                <section class="faq_even">
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Was kostet Freifunk?</p>
-                		<h4>Antwort</h4>
-                		<p>Wenn du mit Freifunk surfen willst kostet es dich nichts. Wenn Du selbst einen Freifunk-Zugang betreiben willst, entstehen lediglich Kosten für die Anschaffung eines Knoten, welche ab 18 Euro beginnen. Hinzuzüglich kommen Stromkosten, die sich jährlich auf etwa 5 Euro belaufen. Wenn Du zusätzlich auch noch deinen Internetanschluss teilen möchtest kommen natürlich auch noch die Kosten für diesen hinzu.</p>
-                	</article>
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Ich habe keine Ahnung von Technik. Kann ich trotzdem einen Knoten betreiben?</p>
-                		<h4>Antwort</h4>
-                		<p>Ja das kannst du. Entweder kannst du dir selber einen Knoten kaufen oder wir kaufen einen für Dich und helfen dir gern bei der Einrichtung oder richten diesen fertig ein, so dass Du deinen Knoten nur noch in die Steckdose stecken musst und gegebenenfalls mit deinem Router verbinden musst.</p>
-                	</article>
-
-                	<article class="faq_content">
-                		<h4>Frage</h4>
-                		<p>Wie verbinden sich eure Router und woher kommt dieses neue WLAN mit komischen Namen?</p>
-                		<h4>Antwort</h4>
-                		<p>Unsere Knoten verbinden sich über ihr WLAN kabellos zu einem Mesh-Netzwerk, das heisst sie sprechen miteinander. So können zwei Knoten Daten austauschen, ihren Internetanschluss teilen und so das Freifunknetz erweitern. Dafür baut jeder Router auch ein Netzwerk mit dem Namen 22:22:54:78:09:43 auf. Dieses kannst du getrost ignorieren.</p>
-                	</article>
-                </section>
-
+                <!--(bake content/faq.html)-->
             </section>
             <figure name="contact" id="contact" class="section-image">
                 <img src="images/freifunk-flensburg-kontakte.jpg" alt="Basteln beim Freifunk Flensburg">
@@ -207,22 +82,7 @@
                 </figcaption>
             </figure>
             <section class="section-standard">
-                <div class="contact_left">
-                	<h3>Freifunk Franken</h3>
-                	<p>Am aller einfachsten um in Kontakt mit allen Freifunkern in Franken zu treten ist es sich einfach auf der <a href="https://wiki.freifunk-franken.de/w/Mailinglisten">Mailingliste</a> an zu melden. Oder du schreibst deine Frage einfach an die folgende Adresse:</p>
-                	<address>
-                		E-Mail-Adresse: <a target="_blank" href="mailto:fragen@freifunk-franken.de">fragen@freifunk-franken.de</a><br>
-                        Webseite: <a target="_blank" href="http://www.freifunk-franken.de">www.freifunk-franken.de</a><br>
-                	</address>
-                </div>
-                <div class="contact_right">
-                	<h3>Freifunk in Ebermannstadt</h3>
-                    <p>Um in Kontakt mit uns direkt zu treten wendest du dich einfach hier hin:</p>
-                	<address>
-                		E-Mail-Adresse: <a target="_blank" href="mailto:kontakt@freifunk-ebs.de">kontakt@freifunk-ebs.de</a><br>
-                	</address>
-                </div>
-
+                <!--(bake content/contact.html)-->
             </section>
         </main>
         <footer class="main-footer">
